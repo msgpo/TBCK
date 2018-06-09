@@ -1,6 +1,6 @@
 ## Project Overview
 
-* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/)]: _60.0 Beta 7_ 
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.0 Beta 7_ 
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
 
 Please remember to backup your original prefs.js file before you add the modified user.js file into your profile folder! 
@@ -17,7 +17,7 @@ Windows friendly carriage returns which you need to change yourself if you like 
 
 ### Configuration usage
 
-In Thunderbird, you can get into the `about:config` Window by going to
+In Thunderbird, you can get into the `about:config` window by going to
 `Edit -> Preferences`, then select the `Advanced` panel, and then select the
 `General` tab. Now click `Config Editor`.
 

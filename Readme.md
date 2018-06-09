@@ -1,7 +1,7 @@
 ## Project Overview
 
-[Mozilla Thunderbird(https://www.thunderbird.net/en-US/)]: _60.0 Beta 7_ 
-[Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/)]: _60.0 Beta 7_ 
+* [Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
 
 Please remember to backup your original prefs.js file before you add the modified user.js file into your profile folder! 
 

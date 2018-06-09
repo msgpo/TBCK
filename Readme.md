@@ -1,6 +1,7 @@
 ## Project Overview
 
-Mozilla Thunderbird: _60.0 Beta 7_ 
+[Mozilla Thunderbird(https://www.thunderbird.net/en-US/)]: _60.0 Beta 7_ 
+[Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
 
 Please remember to backup your original prefs.js file before you add the modified user.js file into your profile folder! 
 
@@ -45,4 +46,3 @@ I use the following extensions, so you might find extension specific flags in th
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)
 * uBO (not officially Thunderbird ready)
 * [ProtonMail Bridge](https://protonmail.com/bridge/)
-* 

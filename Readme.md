@@ -43,3 +43,6 @@ I use the following extensions, so you might find extension specific flags in th
 * ]Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60+
 * [Logout](https://addons.mozilla.org/en-US/thunderbird/addon/logout/?src=cb-dl-popular)
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)
+* uBO (not officially Thunderbird ready)
+* [ProtonMail Bridge](https://protonmail.com/bridge/)
+* 

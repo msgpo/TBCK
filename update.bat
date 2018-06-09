@@ -2,7 +2,7 @@
 
 # https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Thunderbird_Configuration_Files
 # http://kb.mozillazine.org/Files_and_folders_in_the_profile_-_Thunderbird
-# %appdata%\thunderbird\profiles\[profile-name]\prefs.js
+# %appdata%\thunderbird\Profiles\[profile-name]\prefs.js
 
 grep -vn "^user_pref(\".*\", .*);$" firefox/CHEF-KOCH_linux/user.js | \
 grep -v "^[0-9]*://" | grep -v "^[0-9]*:$" | \

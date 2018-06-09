@@ -1,18 +1,20 @@
 ## Project Overview
 
+Mozilla Thunderbird: _60.0 Beta 7_ 
+
 Please remember to backup your original prefs.js file before you add the modified user.js file into your profile folder! 
 
 This repository contains a list of about:config settings that I have changed for both
 preferential reasons, and also privacy and security reasons.
 
-I do not add comments to each line, this is pointless, you simply can google it yourself or try it yourself and see what happens, takes 2 seconds. Several toggles also getting removed over the time due the nature of software development and improvements. 
+I do not add comments to each line, this is pointless, you simply can google it yourself or try it yourself and see what happens, takes 2 seconds. Several toggles also getting removed over the time due the nature of software development and improvements.
 
 ### Windows & Linux
 
 The user.js files are  usually identical. The only difference is that the windows version has
 Windows friendly carriage returns which you need to change yourself if you like to use the configuration on your Linux OS. 
 
-### General
+### Configuration usage
 
 In Thunderbird, you can get into the `about:config` Window by going to
 `Edit -> Preferences`, then select the `Advanced` panel, and then select the
@@ -22,3 +24,22 @@ In short, you can either go to the url `about:config` and search for the configs
 manually and set them, or you can move the user.js file to the
 [profile folder](http://kb.mozillazine.org/Profile_folder) which differs across
 operating systems.
+
+### Extensions
+
+I use the following extensions, so you might find extension specific flags in the _user.js_ file, even if you're not using them, it's not needed to remove them manually from the configuration since they getting ignored by Thunderbird.
+
+* [Engimail](https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/?src=cb-dl-mostpopular)
+* [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded) - incompatible with TB 60+
+* [Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+
+* [Allow HTML Temp](https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp/?src=cb-dl-users) - incompatible with TB 60+
+* [MinimizeToTray revived](https://addons.mozilla.org/en-US/thunderbird/addon/minimizetotray-revived/?src=search) - incompatible with TB 60+
+* [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users) - incompatible with TB 60+
+* [Encrypt if possible](https://addons.mozilla.org/EN-US/thunderbird/addon/encrypt-if-possible/?src=cb-dl-users) 
+* [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created) - incompatible with TB 60+
+* [TorBirdy](https://addons.mozilla.org/en-US/thunderbird/addon/torbirdy/?src=cb-dl-created) 
+* [ReloadPAC](https://addons.mozilla.org/en-US/thunderbird/addon/reloadpac/?src=cb-dl-created)
+* [Copy Folder](https://addons.mozilla.org/en-US/thunderbird/addon/copy-folder/?src=cb-dl-popular)
+* ]Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60+
+* [Logout](https://addons.mozilla.org/en-US/thunderbird/addon/logout/?src=cb-dl-popular)
+* [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)

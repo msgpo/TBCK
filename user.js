@@ -434,3 +434,4 @@ user_pref("webgl.enable-debug-renderer-info", false);
 user_pref("webgl.enable-webgl2", false);
 user_pref("webgl.min_capability_mode", true);
 user_pref("xpinstall.whitelist.required", true);
+user_pref("extensions.getAddons.showPane", false);

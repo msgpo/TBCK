@@ -1,5 +1,8 @@
 ## Project Overview
 
+TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after a short time.
+
+
 * [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.0 Beta 8_ 
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
 

@@ -1,6 +1,6 @@
 ## Project Overview
 
-* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.0 Beta 7_ 
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.0 Beta 8_ 
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
 
 Please remember to backup your original prefs.js file before you add the modified user.js file into your profile folder! 
@@ -27,6 +27,8 @@ manually and set them, or you can move the user.js file to the
 operating systems.
 
 ### Extensions
+
+`extensions.strictCompatibility` is set to `false`, since Thunderbird 60.0 Beta 8 all add-ons which aren't labeled as _Thunderbird 60 compatible_ otherwise won't load anymore.
 
 I use the following extensions, so you might find extension specific flags in the _user.js_ file, even if you're not using them, it's not needed to remove them manually from the configuration since they getting ignored by Thunderbird.
 

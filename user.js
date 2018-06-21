@@ -1,6 +1,8 @@
 //user_pref("mailnews.allowMboxOver4GB", true;
 //user_pref("mailnews.auto_config_url, "");
 //user_pref("security.tls.version.max", 4);
+user_pref("extensions.strictCompatibility", false);
+user_pref("mail.store_conversion_enabled", true);
 user_pref("Feeds.logging.console", Warn);
 user_pref("accessibility.force_disabled", 1);
 user_pref("app.normandy.api_url", "");

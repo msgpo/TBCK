@@ -51,3 +51,9 @@ I use the following extensions, so you might find extension specific flags in th
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)
 * uBO (not officially Thunderbird ready)
 * [ProtonMail Bridge](https://protonmail.com/bridge/)
+
+## Warning for AntiVirus User
+
+**DO NOT** enable the function to allow your AV to scan your inbox, disable this in your AV program **AND** in Thunderbird. 
+
+The problem with this function is a possible security risk. This function not only allows the AV engine to scan the files it also _opens_ the emails to inspect it's content and attachment which might trigger certain things, like placing a cookie or to let the original transmitter know if you read it or in the worst case scenario (if it's really spam) to trigger an automatically subscription.

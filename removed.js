@@ -78,3 +78,8 @@ user_pref("noscript.toggle.temp", true);
 user_pref("noscript.toolbarToggle", 0);
 user_pref("noscript.xss.notify", true);
 user_pref("noscript.xss.trustTemp", true);
+
+// Main Engine
+user_pref("mailnews.allowMboxOver4GB", true;
+user_pref("mailnews.auto_config_url, "");
+user_pref("security.tls.version.max", 4);

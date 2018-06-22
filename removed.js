@@ -82,4 +82,7 @@ user_pref("noscript.xss.trustTemp", true);
 // Main Engine
 user_pref("mailnews.allowMboxOver4GB", true;
 user_pref("mailnews.auto_config_url, "");
+
+//Networking
+user_pref("network.captive-portal-service.enabled", false);
 user_pref("security.tls.version.max", 4);

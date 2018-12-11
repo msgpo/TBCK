@@ -3,7 +3,7 @@
 TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after a short time.
 
 
-* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.3.3_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/60.3.3/releasenotes/)) + [64 Beta 3](https://www.thunderbird.net/en-US/thunderbird/64.0beta/releasenotes/)
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.3.3_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/60.3.3/releasenotes/)) + [64 Beta 4](https://www.thunderbird.net/en-US/thunderbird/64.0beta/releasenotes/)
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
 
 Please remember to backup your original prefs.js file before you add the modified user.js file into your profile folder! 

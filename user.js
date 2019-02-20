@@ -1,5 +1,23 @@
 //user_pref("extensions.blocklist.enabled", false);
 //user_pref("privacy.firstparty.isolate", true);
+user_pref("network.trr.mode", 2);
+user_pref("privacy.popups.disable_from_plugins", 3); //default
+user_pref("privacy.userContext.enabled", true);
+user_pref("media.opus.enabled", false);
+user_pref("image.decode-immediately.enabled", true);
+user_pref("media.ffmpeg.low-latency.enabled", true);
+user_pref("network.dns.blockDotOnion", false);
+user_pref("network.dns.disableIPv6", true);
+user_pref("network.notify.IPv6", false); //default
+user_pref("toolkit.crashreporter.infoURL", "");
+user_pref("datareporting.policy.firstRunURL", "");
+user_pref("captivedetect.canonicalURL", "");
+user_pref("canvas.filters.enabled", true); //default
+user_pref("apz.autoscroll.enabled", false);
+user_pref("app.releaseNotesURL", "");
+user_pref("toolkit.telemetry.infoURL", "");
+user_pref("privacy.trackingprotection.lower_network_priority", true);
+user_pref("privacy.trackingprotection.annotate_channels", false);
 user_pref("mailnews.display.original_date", true);
 user_pref("Feeds.logging.console", Warn);
 user_pref("accessibility.force_disabled", 1);
@@ -107,7 +125,7 @@ user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.sensors.enabled", false);
-user_pref("device.storage.enabled", false);
+user_pref("device.storage.enabled", false); //default
 user_pref("devtools.chrome.enabled", false);
 user_pref("devtools.debugger.remote-enabled", false);
 user_pref("devtools.webide.autoinstallADBHelper", false);
@@ -299,11 +317,11 @@ user_pref("privacy.clearOnShutdown.history", true);
 user_pref("privacy.clearOnShutdown.offlineApps", true);
 user_pref("privacy.clearOnShutdown.sessions", true);
 user_pref("privacy.clearOnShutdown.siteSettings", false);
-user_pref("privacy.donottrackheader.enabled", false);
+user_pref("privacy.donottrackheader.enabled", false); //default
 user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
-user_pref("privacy.resistFingerprinting", true);
+user_pref("privacy.resistFingerprinting", false); //default
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
-user_pref("privacy.trackingprotection.enabled", true);
+user_pref("privacy.trackingprotection.enabled", false); //default
 user_pref("privacy.trackingprotection.pbmode.enabled", true);
 user_pref("privacy.trackingprotection.ui.enabled", true);
 user_pref("privacy.window.maxInnerHeight", 900);
@@ -359,7 +377,7 @@ user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.cachedClientID", "");
-user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.enabled", false); //default
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.hybridContent.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false); 

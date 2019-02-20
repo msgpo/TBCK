@@ -1,5 +1,6 @@
 //user_pref("extensions.blocklist.enabled", false);
 //user_pref("privacy.firstparty.isolate", true);
+user_pref("mailnews.display.original_date", true);
 user_pref("Feeds.logging.console", Warn);
 user_pref("accessibility.force_disabled", 1);
 user_pref("app.normandy.api_url", "");

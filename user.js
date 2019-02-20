@@ -1,5 +1,6 @@
 //user_pref("extensions.blocklist.enabled", false);
 //user_pref("privacy.firstparty.isolate", true);
+user_pref("mail.cloud_files.learn_more_url", "");
 user_pref("network.trr.mode", 2);
 user_pref("privacy.popups.disable_from_plugins", 3); //default
 user_pref("privacy.userContext.enabled", true);

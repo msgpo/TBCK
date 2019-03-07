@@ -1,5 +1,8 @@
-//user_pref("extensions.blocklist.enabled", false);
-//user_pref("privacy.firstparty.isolate", true);
+// Problematic (defaults)
+//user_pref("privacy.resistFingerprinting", true);
+//user_pref("privacy.resistFingerprinting.auto.DeclineNoUserInputCanvasPrompts", true);
+//user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
+//user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 user_pref("mail.cloud_files.learn_more_url", "");
 user_pref("network.trr.mode", 2);
 user_pref("privacy.popups.disable_from_plugins", 3); //default

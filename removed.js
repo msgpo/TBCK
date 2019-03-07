@@ -79,10 +79,16 @@ user_pref("noscript.toolbarToggle", 0);
 user_pref("noscript.xss.notify", true);
 user_pref("noscript.xss.trustTemp", true);
 
-// Main Engine
+// Mail
 user_pref("mailnews.allowMboxOver4GB", true;
 user_pref("mailnews.auto_config_url, "");
 
 //Networking
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("security.tls.version.max", 4);
+
+//Extensions
+//user_pref("extensions.blocklist.enabled", false);
+
+//Privacy
+//user_pref("privacy.firstparty.isolate", true);

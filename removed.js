@@ -81,14 +81,20 @@ user_pref("noscript.xss.trustTemp", true);
 
 // Mail
 user_pref("mailnews.allowMboxOver4GB", true;
-user_pref("mailnews.auto_config_url, "");
+user_pref("mailnews.auto_config_url", "");
+          
+// Calendar 
+user_pref("calendar.useragent.extra", "");
 
-//Networking
+// Networking
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("security.tls.version.max", 4);
 
-//Extensions
+// Extensions
 //user_pref("extensions.blocklist.enabled", false);
+//user_pref("extensions.enigmail.addHeaders", false);
+//user_pref("extensions.enigmail.useDefaultComment", true);
+//user_pref("extensions.enigmail.agentAdditionalParam", "--no-emit-version --no-comments");
 
 //Privacy
 //user_pref("privacy.firstparty.isolate", true);

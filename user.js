@@ -3,6 +3,7 @@
 //user_pref("privacy.resistFingerprinting.auto.DeclineNoUserInputCanvasPrompts", true);
 //user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
+user_pref("security.ssl.warn_missing_rfc5746", 1);
 user_pref("mail.cloud_files.learn_more_url", "");
 user_pref("network.trr.mode", 2);
 user_pref("privacy.popups.disable_from_plugins", 3); //default

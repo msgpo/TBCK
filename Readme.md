@@ -36,21 +36,21 @@ operating systems.
 I use the following extensions, so you might find extension specific flags in the _user.js_ file, even if you're not using them, it's not needed to remove them manually from the configuration since they getting ignored by Thunderbird.
 
 * [Engimail](https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/?src=cb-dl-mostpopular)
-* [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded) - incompatible with TB 60+
+* [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded)
 * [Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+
-* [Allow HTML Temp](https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp/?src=cb-dl-users) - incompatible with TB 60+
+* [Allow HTML Temp](https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp/?src=cb-dl-users)
 * [MinimizeToTray revived](https://addons.mozilla.org/en-US/thunderbird/addon/minimizetotray-revived/?src=search) - incompatible with TB 60+
-* [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users) - incompatible with TB 60+
+* [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users)
 * [Encrypt if possible](https://addons.mozilla.org/EN-US/thunderbird/addon/encrypt-if-possible/?src=cb-dl-users) 
-* [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created) - incompatible with TB 60+
+* [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created)
 * [TorBirdy](https://addons.mozilla.org/en-US/thunderbird/addon/torbirdy/?src=cb-dl-created) 
 * [ReloadPAC](https://addons.mozilla.org/en-US/thunderbird/addon/reloadpac/?src=cb-dl-created)
 * [Copy Folder](https://addons.mozilla.org/en-US/thunderbird/addon/copy-folder/?src=cb-dl-popular)
 * [Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60+
 * [Logout](https://addons.mozilla.org/en-US/thunderbird/addon/logout/?src=cb-dl-popular)
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)
-* uBO (not officially Thunderbird ready)
-* [ProtonMail Bridge](https://protonmail.com/bridge/)
+* uBlock ([not officially Thunderbird ready](https://github.com/gorhill/uBlock/issues/3698))
+* (optional) [ProtonMail Bridge](https://protonmail.com/bridge/)
 
 ## Warning for AntiVirus User
 

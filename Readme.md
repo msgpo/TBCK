@@ -52,6 +52,10 @@ I use the following extensions, so you might find extension specific flags in th
 * uBlock ([not officially Thunderbird ready](https://github.com/gorhill/uBlock/issues/3698))
 * (optional) [ProtonMail Bridge](https://protonmail.com/bridge/)
 
+### How to install uBo into Thunderbird?
+
+The extension is not officially in the Thunderbird Store (AMO), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
+
 ## Warning for AntiVirus User
 
 **DO NOT** enable the function to allow your AV to scan your inbox, disable this in your AV program **AND** in Thunderbird. 

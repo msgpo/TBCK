@@ -61,3 +61,18 @@ The extension is not officially in the Thunderbird Store (AMO), however you can 
 **DO NOT** enable the function to allow your AV to scan your inbox, disable this in your AV program **AND** in Thunderbird. 
 
 The problem with this function is a possible security risk. This function not only allows the AV engine to scan the files it also _opens_ the emails to inspect it's content and attachment which might trigger certain things, like placing a cookie or to let the original transmitter know if you read it or in the worst case scenario (if it's really spam) to trigger an automatically subscription.
+
+## Attacks against S/MIME and PGP
+
+In the recently published ["Johnny-You-Are-Fired"](https://github.com/RUB-NDS/Johnny-You-Are-Fired) [(paper)](https://github.com/RUB-NDS/Johnny-You-Are-Fired/blob/master/paper/johnny-fired.pdf) publication we learned that the signature check can be bypassed. 
+
+What can (currently) be abused?
+* Exploiting the CMS (Cryptographic Message Syntax) flaws
+* Performing GnuPG API injection attacks
+* Constructing non-standard MIME trees
+* Displaying valid ID on the email header with a false signature
+* Mimicking valid signatures on the UI by using HTML and CSS
+
+So how do we migrate this in order to protect ourselves? 
+
+We disable/block HTML-Code in eMails and we disallow to download third-party content (both is already done via our hardened user.js). The rest must be fixed within the plugins because the mentioned attacks are not targeting the OpenPGP or S/MIME standard or underpinning cryptographic primitives they are basically abusing various flawed implementations.

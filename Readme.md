@@ -1,12 +1,12 @@
 ## Project Overview
 
-TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after a short time.
+TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
 
 
-* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.6.1_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/60.6.1/releasenotes/)) + [67 Beta 2](https://www.thunderbird.net/en-US/thunderbird/67.0beta/releasenotes/)
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.6.1_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/60.6.1/releasenotes/)) + [67 Beta 3](https://www.thunderbird.net/en-US/thunderbird/67.0beta/releasenotes/)
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
 
-Please remember to backup your original prefs.js file before you add the modified user.js file into your profile folder! 
+Please remember to backup your original `prefs.js` file before you add the modified user.js file into your profile folder! 
 
 This repository contains a list of about:config settings that I have changed for both
 preferential reasons, and also privacy and security reasons.
@@ -52,7 +52,7 @@ I use the following extensions, so you might find extension specific flags in th
 * uBlock ([not officially Thunderbird ready](https://github.com/gorhill/uBlock/issues/3698))
 * (optional) [ProtonMail Bridge](https://protonmail.com/bridge/)
 
-### How to install uBo into Thunderbird?
+### How to install uBlock into Thunderbird?
 
 The extension is not officially in the Thunderbird Store (AMO), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
 

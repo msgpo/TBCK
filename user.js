@@ -1,4 +1,3 @@
-
 // Problematic (defaults)
 //user_pref("extensions.systemAddon.update.url", "");
 //user_pref("network.http.spdy.enabled.http2draft", false);
@@ -6,6 +5,11 @@
 //user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 //user_pref("privacy.resistFingerprinting", true);
+// Upcoming
+//user_pref("rss.display.prefer_plaintext", true);
+//user_pref("rss.display.html_as", 1);
+//user_pref("rss.display.disallow_mime_handlers", 3);
+//
 user_pref("accessibility.force_disabled", 1);
 user_pref("alerts.showFavicons", false); //default
 user_pref("app.normandy.api_url", "");

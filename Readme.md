@@ -8,10 +8,7 @@ TBCK doesn't document every toggle because everyone can Google what each setting
 
 Please remember to backup your original `prefs.js` file before you add the modified user.js file into your profile folder! 
 
-This repository contains a list of about:config settings that I have changed for both
-preferential reasons, and also privacy and security reasons.
-
-I do not add comments to each line, this is pointless, you simply can google it yourself or try it yourself and see what happens, takes 2 seconds. Several toggles also getting removed over the time due the nature of software development and improvements.
+This repository contains a list of about:config settings that I have changed for both preferential reasons, and also privacy and security reasons.
 
 ### Windows & Linux
 
@@ -39,7 +36,7 @@ I use the following extensions, so you might find extension specific flags in th
 * [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded)
 * [Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+
 * [Allow HTML Temp](https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp/?src=cb-dl-users)
-* [MinimizeToTray revived](https://addons.mozilla.org/en-US/thunderbird/addon/minimizetotray-revived/?src=search) - incompatible with TB 60+
+* [MinimizeToTray Reanimated](https://addons.thunderbird.net/en-US/thunderbird/addon/minimizetotray-reanimated/?src=ss)
 * [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users)
 * [Encrypt if possible](https://addons.mozilla.org/EN-US/thunderbird/addon/encrypt-if-possible/?src=cb-dl-users) 
 * [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created)
@@ -52,7 +49,7 @@ I use the following extensions, so you might find extension specific flags in th
 * uBlock ([not officially Thunderbird ready](https://github.com/gorhill/uBlock/issues/3698))
 * (optional) [ProtonMail Bridge](https://protonmail.com/bridge/)
 
-### How to install uBlock into Thunderbird?
+### How to install uBlock Origin into Thunderbird?
 
 The extension is not officially in the Thunderbird Store (AMO), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
 

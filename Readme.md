@@ -4,7 +4,8 @@ TBCK doesn't document every toggle because everyone can Google what each setting
 
 
 * [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _60.7.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/60.7.0/releasenotes/)) + [67 Beta 3](https://www.thunderbird.net/en-US/thunderbird/67.0beta/releasenotes/)
-* [Eudora](https://wiki.mozilla.org/Eudora_Releases): Not Supported! 
+* [Thunderbird via Microsoft Store](https://www.microsoft.com/en-us/p/thunderbird/9pcvbx66llqf?activetab=pivot%3Aoverviewtab) - **Partially supported**
+* [Eudora](https://wiki.mozilla.org/Eudora_Releases) - **Not supported!** 
 
 Please remember to backup your original `prefs.js` file before you add the modified user.js file into your profile folder! 
 

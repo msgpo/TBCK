@@ -50,9 +50,41 @@ I use the following extensions, so you might find extension specific flags in th
 * uBlock ([not officially Thunderbird ready](https://github.com/gorhill/uBlock/issues/3698))
 * (optional) [ProtonMail Bridge](https://protonmail.com/bridge/)
 
-### How to install uBlock Origin into Thunderbird?
+### How to install uBlock Origin in Thunderbird?
 
 The extension is not officially in the Thunderbird Store (AMO), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
+
+
+### profiles.ini
+
+The [profiles.ini file](http://kb.mozillazine.org/Profiles.ini_file) (_%APPDATA%\Thunderbird\Profiles\profileName_) is a plain-text file, it can be easily opened, viewed and edited, with a text editor such as Notepad or any other editor. Whenever [multiple profiles](http://kb.mozillazine.org/Profile_in_use#Check_the_profile_folder_name_and_location) exist, it will automatically include an _original_ "default" [profile](http://kb.mozillazine.org/Profile_folder_-_Thunderbird) and additional profiles under _custom_ locations (_IsRelative_). This is interesting if you work with multiple profiles or in case you like to [move your profiles](http://kb.mozillazine.org/Moving_your_profile_folder_-_Thunderbird).
+
+**Example with multiple profiles**
+```sh
+[General]
+; 1= Does not ask you at startup to load a specific profile
+; 0 = Ask you each time.
+StartWithLastProfile=1
+
+[Profile0]
+; Default profile will always created.
+Name=default
+; Custom profile location (1=yes/0=no).
+IsRelative=1
+Path=Profiles/12345678.default
+
+[Profile1]
+Name=alicew
+IsRelative=0
+Path=C:\Mozilla\Firefox\Profiles\testp
+Default=1
+
+[Profile2]
+Name=sheldon
+IsRelative=0
+Path=V:\Mozilla\Firefox\Profiles\test2
+```
+
 
 ## Warning for AntiVirus User
 

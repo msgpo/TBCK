@@ -14,7 +14,15 @@ This repository contains a list of about:config settings that I have changed for
 ### Windows & Linux
 
 The user.js files are  usually identical. The only difference is that the windows version has
-Windows friendly carriage returns which you need to change yourself if you like to use the configuration on your Linux OS. 
+Windows friendly carriage returns which you need to change yourself if you like to use the configuration on your Linux OS.
+
+
+### Thunderbird 64-Bit (upgrade procedure)
+
+In case you like to upgrade your x86 (32-Bit) Thunderbird to a 64-Bit (x64) version, you actually have to uninstall the x86 version first otherwise you have two installations and two profiles. 
+
+Your default profile is stored under `%AppData%\Roaming\Thunderbird\Profiles`, backup the content first, the default folder for your current profile is in a folder called `xxxxxdefault`. Just copy or "zip" the folder, so that you get a fully functional backup. Uninstall the old x86 version and install the new x64 version, copy your backup into your profile folder and start Thunderbird.
+
 
 ### Configuration usage
 
@@ -35,7 +43,7 @@ I use the following extensions, so you might find extension specific flags in th
 
 * [Engimail](https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/?src=cb-dl-mostpopular)
 * [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded)
-* [Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+
+* ~~[Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+~~
 * [Allow HTML Temp](https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp/?src=cb-dl-users)
 * [MinimizeToTray Reanimated](https://addons.thunderbird.net/en-US/thunderbird/addon/minimizetotray-reanimated/?src=ss)
 * [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users)
@@ -44,15 +52,15 @@ I use the following extensions, so you might find extension specific flags in th
 * [TorBirdy](https://addons.mozilla.org/en-US/thunderbird/addon/torbirdy/?src=cb-dl-created) 
 * [ReloadPAC](https://addons.mozilla.org/en-US/thunderbird/addon/reloadpac/?src=cb-dl-created)
 * [Copy Folder](https://addons.mozilla.org/en-US/thunderbird/addon/copy-folder/?src=cb-dl-popular)
-* [Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60+
+* ~~[Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60~~
 * [Logout](https://addons.mozilla.org/en-US/thunderbird/addon/logout/?src=cb-dl-popular)
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)
-* uBlock ([not officially Thunderbird ready](https://github.com/gorhill/uBlock/issues/3698))
-* (optional) [ProtonMail Bridge](https://protonmail.com/bridge/)
+* uBlock ([not officially Thunderbird supported](https://github.com/gorhill/uBlock/issues/3698))
+* [ProtonMail Bridge](https://protonmail.com/bridge/) (_optional_) 
 
 ### How to install uBlock Origin in Thunderbird?
 
-The extension is not officially in the Thunderbird Store (AMO), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
+The extension is [not officially avbl. at the Thunderbird Store (AMO)](ttps://github.com/gorhill/uBlock/issues/3698), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
 
 
 ### profiles.ini

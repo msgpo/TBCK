@@ -11,6 +11,18 @@ Please remember to backup your original `prefs.js` file before you add the modif
 
 This repository contains a list of about:config settings that I have changed for both preferential reasons, and also privacy and security reasons.
 
+### Overall Project Goal
+
+* Remove/disable all telemetry
+* Remove/disable all "startup connections"
+* Reduce all traffic caused by "_unneeded startup connections_".
+* Prevent leaks & exposures caused by fingerprinting attacks
+* Disable all sync/monitoring/pocket & other "useless" features
+* Provide a configuration which does not break too much
+* Reduce possible attack scenarios (_security_)
+* Remove/disable insecure protocols
+* Enforce stronger [ciphers](https://en.wikipedia.org/wiki/Cipher) -  algorithm for performing encryption or decryption to migrate possible attacks
+
 ### Windows & Linux
 
 The user.js files are  usually identical. The only difference is that the windows version has

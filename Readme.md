@@ -51,9 +51,9 @@ operating systems.
 
 `extensions.strictCompatibility` is set to `false`, since Thunderbird 60.0 Beta 8 all add-ons which aren't labeled as _Thunderbird 60 compatible_ otherwise won't load anymore.
 
-I use the following extensions, so you might find extension specific flags in the _user.js_ file, even if you're not using them, it's not needed to remove them manually from the configuration since they getting ignored by Thunderbird.
+I recommended the following extensions, so you might find extension specific flags in the _user.js_ file, even if you're not using them, it's not needed to remove them manually from the configuration since they getting ignored by Thunderbird.
 
-* [Engimail](https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/?src=cb-dl-mostpopular)
+* ~~[Engimail](https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/?src=cb-dl-mostpopular)~~ (_Addon will be integrated into TB v78, it will be installable until v68_)
 * [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded)
 * ~~[Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+~~
 * [Allow HTML Temp](https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp/?src=cb-dl-users)

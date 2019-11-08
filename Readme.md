@@ -57,7 +57,7 @@ I recommended the following extensions, so you might find extension specific fla
 * [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded)
 * ~~[Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+~~
 * [Allow HTML Temp](https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp/?src=cb-dl-users)
-* [MinimizeToTray Reanimated](https://addons.thunderbird.net/en-US/thunderbird/addon/minimizetotray-reanimated/?src=ss)
+* ~~[MinimizeToTray Reanimated](https://addons.thunderbird.net/en-US/thunderbird/addon/minimizetotray-reanimated/?src=ss)~~ [KeepInTaskbar](https://addons.thunderbird.net/en-US/thunderbird/addon/keep-in-taskbar/) + [BirdTray](https://github.com/gyunaev/birdtray/releases)
 * [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users)
 * [Encrypt if possible](https://addons.mozilla.org/EN-US/thunderbird/addon/encrypt-if-possible/?src=cb-dl-users) 
 * [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created)

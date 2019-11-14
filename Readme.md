@@ -69,8 +69,10 @@ I recommended the following extensions, so you might find extension specific fla
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)
 * uBlock ([not officially Thunderbird supported](https://github.com/gorhill/uBlock/issues/3698))
 * [ProtonMail Bridge](https://protonmail.com/bridge/) (_optional_) 
+* (_not an extension_) [mailspoof](https://github.com/serain/mailspoof) - Small tool to quickly scan large list of domains for misconfigured SPF and DMARC records.
 
-### How to install uBlock Origin in Thunderbird?
+
+### Installing uBlock Origin into Thunderbird
 
 The extension is [not officially avbl. at the Thunderbird Store (AMO)](ttps://github.com/gorhill/uBlock/issues/3698), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
 

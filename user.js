@@ -572,9 +572,9 @@ user_pref("webgl.disabled", true);
 user_pref("webgl.dxgl.enabled", false);
 user_pref("webgl.dxgl.needs-finish", false);
 user_pref("webgl.enable-debug-renderer-info", true);
-user_pref("webgl.enable-draft-extensions, false);
-user_pref("webgl.enable-privileged-extensions, false);
-user_pref("webgl.enable-surface-texture, false);
+user_pref("webgl.enable-draft-extensions", false);
+user_pref("webgl.enable-privileged-extensions", false);
+user_pref("webgl.enable-surface-texture", false);
 user_pref("webgl.enable-webgl2", false); //default true
 user_pref("webgl.force-enabled", false);
 user_pref("webgl.force-index-validation", 0);

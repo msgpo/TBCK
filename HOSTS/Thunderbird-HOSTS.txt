@@ -1,0 +1,12 @@
+# Mozilla Thunderbird Startup blocking HOSTS
+#
+# by CHEF-KOCH
+#
+# v0.0.1
+#
+#
+#0.0.0.0 mozilla.cloudflare-dns.com
+#0.0.0.0 ocsp.digicert.com
+0.0.0.0 aus.thunderbird.net
+0.0.0.0 live.thunderbird.net
+0.0.0.0 location.srvices.mozilla.com

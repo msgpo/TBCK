@@ -13,7 +13,7 @@ This repository contains a list of about:config settings that I have changed for
 
 ### Overall Project Goal
 
-* Remove/disable all telemetry
+* Remove/disable all Thunderbird telemetry
 * Remove/disable all "startup connections"
 * Reduce all traffic caused by "_unneeded startup connections_".
 * Prevent leaks & exposures caused by fingerprinting attacks
@@ -42,7 +42,7 @@ In Thunderbird, you can get into the `about:config` window by going to
 `Edit -> Preferences`, then select the `Advanced` panel, and then select the
 `General` tab. Now click `Config Editor`.
 
-In short, you can either go to the url `about:config` and search for the configs
+In short, you can either go to the URL `about:config` and search for the configs
 manually and set them, or you can move the user.js file to the
 [profile folder](http://kb.mozillazine.org/Profile_folder) which differs across
 operating systems.
@@ -53,28 +53,30 @@ operating systems.
 
 I recommended the following extensions, so you might find extension specific flags in the _user.js_ file, even if you're not using them, it's not needed to remove them manually from the configuration since they getting ignored by Thunderbird.
 
-* ~~[Engimail](https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/?src=cb-dl-mostpopular)~~ (_Addon will be integrated into TB v78, it will be installable until v68_)
-* [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded)
-* ~~[Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+~~
-* [Allow HTML Temp](https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp/?src=cb-dl-users)
-* ~~[MinimizeToTray Reanimated](https://addons.thunderbird.net/en-US/thunderbird/addon/minimizetotray-reanimated/?src=ss)~~ [KeepInTaskbar](https://addons.thunderbird.net/en-US/thunderbird/addon/keep-in-taskbar/) + [BirdTray](https://github.com/gyunaev/birdtray/releases)
-* [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users)
-* [Encrypt if possible](https://addons.mozilla.org/EN-US/thunderbird/addon/encrypt-if-possible/?src=cb-dl-users) 
-* [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created)
-* [TorBirdy](https://addons.mozilla.org/en-US/thunderbird/addon/torbirdy/?src=cb-dl-created) 
-* [ReloadPAC](https://addons.mozilla.org/en-US/thunderbird/addon/reloadpac/?src=cb-dl-created)
+* (_not an addon_) [mailspoof](https://github.com/serain/mailspoof) - Small tool to quickly scan large list of domains for misconfigured SPF and DMARC records.
+* [Allow HTML Temp](https://addons.thunderbird.net/EN-US/thunderbird/addon/allow-html-temp/)
 * [Copy Folder](https://addons.mozilla.org/en-US/thunderbird/addon/copy-folder/?src=cb-dl-popular)
-* ~~[Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60~~
+* [DKIM Verifier](https://addons.thunderbird.net/EN-US/thunderbird/addon/dkim-verifier/)
+* [Encrypt if possible](https://addons.mozilla.org/EN-US/thunderbird/addon/encrypt-if-possible/?src=cb-dl-users) 
+* [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded)
 * [Logout](https://addons.mozilla.org/en-US/thunderbird/addon/logout/?src=cb-dl-popular)
+* [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users)
+* [Paranoia](https://addons.thunderbird.net/EN-US/thunderbird/addon/paranoia/)
+* [ProtonMail Bridge](https://protonmail.com/bridge/) (_optional_)
+* [ReloadPAC](https://addons.mozilla.org/en-US/thunderbird/addon/reloadpac/?src=cb-dl-created)
+* [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created)
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)
+* [TorBirdy](https://addons.mozilla.org/en-US/thunderbird/addon/torbirdy/?src=cb-dl-created) 
+* ~~[Engimail](https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/?src=cb-dl-mostpopular)~~ (_Addon will be integrated into TB v78, it will be installable until v68_)
+* ~~[Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+~~
+* ~~[MinimizeToTray Reanimated](https://addons.thunderbird.net/en-US/thunderbird/addon/minimizetotray-reanimated/?src=ss)~~ [KeepInTaskbar](https://addons.thunderbird.net/en-US/thunderbird/addon/keep-in-taskbar/) + [BirdTray](https://github.com/gyunaev/birdtray/releases)
+* ~~[Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60~~
 * uBlock ([not officially Thunderbird supported](https://github.com/gorhill/uBlock/issues/3698))
-* [ProtonMail Bridge](https://protonmail.com/bridge/) (_optional_) 
-* (_not an extension_) [mailspoof](https://github.com/serain/mailspoof) - Small tool to quickly scan large list of domains for misconfigured SPF and DMARC records.
 
 
-### Installing uBlock Origin into Thunderbird
+### Install uBlock Origin into Thunderbird
 
-The extension is [not officially avbl. at the Thunderbird Store (AMO)](ttps://github.com/gorhill/uBlock/issues/3698), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
+The extension is [not officially available at the Thunderbird Store (AMO)](https://github.com/gorhill/uBlock/issues/3698), however you can manually install the extension by downloading the `uBlock0_[version].thunderbird.xpi` from the official source and then drag & drop it into Thunderbird's Add-ons Manager pane.
 
 
 ### profiles.ini
@@ -124,6 +126,7 @@ What can (currently) be abused?
 * Constructing non-standard MIME trees
 * Displaying valid ID on the email header with a false signature
 * Mimicking valid signatures on the UI by using HTML and CSS
+
 
 So how do we migrate this in order to protect ourselves? 
 

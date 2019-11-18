@@ -1,3 +1,11 @@
+// Fonts & Canvas
+user_pref("gfx.downloadable_fonts.enabled", false); // problematic
+user_pref("gfx.canvas.remote", false);
+user_pref("gfx.core-animation.enabled", false);
+user_pref("gfx.downloadable_fonts.sanitize_omt", true);
+user_pref("gfx.downloadable_fonts.validate_variation_tables", true);
+
+
 // RSS 
 user_pref("rss.display.disallow_mime_handlers", 3); // default 0
 user_pref("rss.display.html_as", 1); // default 0
@@ -58,7 +66,7 @@ user_pref("mail.server.default.enableAutocrypt", false);
 user_pref("mail.shell.checkDefaultClient", false);
 user_pref("mail.shell.checkDefaultMail", false);
 user_pref("mail.showCondensedAddresses", false);
-user_pref("mail.smtpserver.default.hello_argument", "[127.0.0.1]");
+user_pref("mail.smtpserver.default.hello_argument", "[127.0.0.1]"); //hidden
 user_pref("mail.spam.logging.enabled", true);
 user_pref("mail.spam.markAsReadOnSpam", true);
 user_pref("mail.spam.version", 1);
@@ -66,7 +74,6 @@ user_pref("mail.SpellCheckBeforeSend", true);
 user_pref("mail.store_conversion_enabled", true);
 user_pref("mail.tabs.autoHide", true);
 user_pref("mailnews.allowMboxOver4GB", true);
-
 
 
 // Mail News 
@@ -90,6 +97,7 @@ user_pref("mailnews.start_page.enabled", false);
 user_pref("mailnews.start_page.url", "");
 user_pref("mailnews.use_received_date", "true");
 user_pref("mailnews.view_default_charset", "UTF-8");
+user_pref("mailnews.start_page.override_url", ""); //https://live.thunderbird.net/%APP%/whatsnew?locale=%LOCALE%&version=%VERSION%&channel=%CHANNEL%&os=%OS%&buildid=%APPBUILDID%
 
 
 // SPAM (filter) & general spam handling 
@@ -380,8 +388,6 @@ user_pref("privacy.cpd.cache", true);
 user_pref("privacy.cpd.cookies", true);
 user_pref("privacy.cpd.history", false);
 user_pref("privacy.donottrackheader.enabled", false); //default
-user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
-user_pref("privacy.firstparty.isolate", true);
 user_pref("privacy.popups.disable_from_plugins", 3); //default
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 user_pref("privacy.resistFingerprinting", false); //default
@@ -390,6 +396,11 @@ user_pref("privacy.sanitize.timeSpan", 0);
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.window.maxInnerHeight", 900);
 user_pref("privacy.window.maxInnerWidth", 1600);
+
+
+// Surf Container
+user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
+user_pref("privacy.firstparty.isolate", true);
 
 
 // Tracking Protection 
@@ -473,6 +484,7 @@ user_pref("dom.workers.enabled", false);
 
 
 // Webrenderer 
+user_pref("gfx.webrender.enabled", true);
 user_pref("gfx.webrender.all", true);
 
 
@@ -490,8 +502,12 @@ user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.url", "");
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.provider.google.advisoryURL", "");
+user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
+user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
 user_pref("browser.safebrowsing.provider.google.gethashURL", "");
 user_pref("browser.safebrowsing.provider.google.lists", "goog-badbinurl-shavar,goog-downloadwhite-digest256,goog-phish-shavar,googpub-phish-shavar,goog-malware-shavar,goog-unwanted-shavar");
 user_pref("browser.safebrowsing.phishing.enabled", false);
@@ -636,7 +652,7 @@ user_pref("network.http.referer.spoofSource", true);
 user_pref("network.http.referer.trimmingPolicy", 2);
 user_pref("network.http.referer.XOriginPolicy", 2);
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
-user_pref("network.http.sendRefererHeader", 0);
+user_pref("network.http.sendRefererHeader", 0); // default 2
 user_pref("network.http.sendSecureXSiteReferrer", false);
 user_pref("network.http.spdy.enabled.deps", false);
 user_pref("network.http.spdy.enabled.http2", false);

@@ -28,6 +28,7 @@ user_pref("calendar.registry.a858aeae-df7f-4b7e-9217-b885f8a8011b.type", "storag
 user_pref("calendar.registry.a858aeae-df7f-4b7e-9217-b885f8a8011b.uri", "moz-storage-calendar://");
 user_pref("calendar.ui.version", 3);
 user_pref("calendar.useragent.extra", "Lightning/71.0");
+user_pref("extensions.lastAppVersion", "70.0");
 user_pref("calendar.network.multirealm", false);
 
 

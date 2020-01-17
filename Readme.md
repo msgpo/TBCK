@@ -3,7 +3,7 @@
 TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
 
 
-* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.4.1_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.4.1/releasenotes/)) + [72 Beta 3](https://www.thunderbird.net/en-US/thunderbird/72.0beta/releasenotes/)
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.4.1_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.4.1/releasenotes/)) + [73 Beta 1](https://www.thunderbird.net/en-US/thunderbird/73.0beta/releasenotes/)
 * [Thunderbird via Microsoft Store](https://www.microsoft.com/en-us/p/thunderbird/9pcvbx66llqf?activetab=pivot%3Aoverviewtab) - **Partially supported**
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases) - **Not supported!** 
 

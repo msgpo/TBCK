@@ -2,7 +2,6 @@
 
 TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
 
-
 * [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.4.2_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.4.2/releasenotes/)) + [73 Beta 1](https://www.thunderbird.net/en-US/thunderbird/73.0beta/releasenotes/)
 * [Thunderbird via Microsoft Store](https://www.microsoft.com/en-us/p/thunderbird/9pcvbx66llqf?activetab=pivot%3Aoverviewtab) - **Partially supported**
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases) - **Not supported!** 
@@ -131,3 +130,7 @@ What can (currently) be abused?
 So how do we migrate this in order to protect ourselves? 
 
 We disable/block HTML-Code in eMails and we disallow to download third-party content (both is already done via our hardened user.js). The rest must be fixed within the plugins because the mentioned attacks are not targeting the OpenPGP or S/MIME standard or underpinning cryptographic primitives they are basically abusing various flawed implementations.
+
+## Reference
+* [Thunderbird’s New Home](https://blog.thunderbird.net/2020/01/thunderbirds-new-home/)
+* [Thunderbird Donations](https://give.thunderbird.net/en-US/)

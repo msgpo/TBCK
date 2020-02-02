@@ -61,7 +61,7 @@ I recommended the following extensions, so you might find extension specific fla
 * [Logout](https://addons.mozilla.org/en-US/thunderbird/addon/logout/?src=cb-dl-popular)
 * [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users)
 * [Paranoia](https://addons.thunderbird.net/EN-US/thunderbird/addon/paranoia/)
-* [ProtonMail Bridge](https://protonmail.com/bridge/) (_optional_)
+* [ProtonMail Bridge](https://protonmail.com/bridge/) or [hydroxide](https://github.com/emersion/hydroxide) (_optional_)
 * [ReloadPAC](https://addons.mozilla.org/en-US/thunderbird/addon/reloadpac/?src=cb-dl-created)
 * [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created)
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)

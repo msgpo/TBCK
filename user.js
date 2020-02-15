@@ -1,10 +1,9 @@
 // Fonts & Canvas
-user_pref("gfx.downloadable_fonts.enabled", false); // problematic
+//user_pref("gfx.downloadable_fonts.enabled", false); // problematic
 user_pref("gfx.canvas.remote", false);
 user_pref("gfx.core-animation.enabled", false);
-user_pref("gfx.downloadable_fonts.sanitize_omt", true);
-user_pref("gfx.downloadable_fonts.validate_variation_tables", true);
-//Change some defaults
+user_pref("gfx.font_rendering.graphite.enabled", false);
+//Change font some defaults
 user_pref("font.name.monospace.x-unicode", "Lucida Console");
 user_pref("font.name.monospace.x-western", "Lucida Console");
 user_pref("font.name.sans-serif.x-unicode", "Arial");
@@ -15,6 +14,8 @@ user_pref("browser.display.use_document_fonts", 0);
 //Downloadable fonts
 user_pref("gfx.downloadable_fonts.disable_cache", true);
 user_pref("gfx.downloadable_fonts.woff2.enabled", false);
+user_pref("gfx.downloadable_fonts.sanitize_omt", true);
+user_pref("gfx.downloadable_fonts.validate_variation_tables", true);
 
 
 // RSS
@@ -47,7 +48,7 @@ user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozi
 
 
 // Extensions
-user_pref("extensions.activeThemeID", "default-theme@mozilla.org");
+//user_pref("extensions.activeThemeID", "default-theme@mozilla.org"); //Outdated since 63+
 user_pref("extensions.blocklist.pingCountTotal", 0);
 user_pref("extensions.blocklist.pingCountVersion", 0);
 user_pref("extensions.databaseSchema", 31);
@@ -152,7 +153,6 @@ user_pref("toolkit.crashreporter.infoURL", "");
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.cachedClientID", "");
-user_pref("toolkit.telemetry.cachedClientID", "");
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.infoURL", "");
@@ -245,7 +245,6 @@ user_pref("canvas.filters.enabled", true);
 user_pref("clipboard.plainTextOnly", true);
 user_pref("device.sensors.enabled", false);
 user_pref("device.storage.enabled", false);
-user_pref("extensions.enabledScopes", 1);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.strictCompatibility", false);
@@ -274,7 +273,6 @@ user_pref("general.smoothScroll.pages", true);
 user_pref("general.smoothScroll", true);
 user_pref("general.useragent.compatMode.firefox", true); //compact mode
 user_pref("general.useragent.locale", "en-US");
-user_pref("gfx.font_rendering.graphite.enabled", false);
 user_pref("gfx.layerscope.enabled", false);
 user_pref("gfx.offscreencanvas.enabled", false);
 user_pref("image.animation_mode", "once"); // "normal"
@@ -288,10 +286,9 @@ user_pref("javascript.enabled", false);
 user_pref("javascript.options.asmjs", false);
 user_pref("javascript.options.shared_memory", false);
 user_pref("keyword.enabled", false);
-user_pref("layout.css.devPixelsPerPx", "1.3"); //UI zoom
+user_pref("layout.css.devPixelsPerPx", "1.4"); //UI zoom
 user_pref("layout.css.visited_links_enabled", false);
 user_pref("layout.spellcheckDefault", 1);
-user_pref("lightweightThemes.update.enabled", false);
 user_pref("middlemouse.contentLoadURL", false);
 user_pref("mousewheel.acceleration.factor", 10);
 user_pref("mousewheel.acceleration.start", 0);
@@ -694,7 +691,6 @@ user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.prefsMigrated", true);
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
 user_pref("network.cookie.thirdparty.sessionOnly", true);
-user_pref("network.file.disable_unc_paths", true);
 user_pref("network.http.altsvc.enabled", false);
 user_pref("network.http.altsvc.oe", false);
 user_pref("network.http.redirection-limit", 8);
@@ -714,3 +710,5 @@ user_pref("network.http.referer.XOriginPolicy", 2);
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 
 
+// Themes
+user_pref("lightweightThemes.update.enabled", true); //workaround

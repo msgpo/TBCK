@@ -10,6 +10,12 @@ Please remember to backup your original `prefs.js` file before you add the modif
 
 This repository contains a list of about:config settings that I have changed for both preferential reasons, and also privacy and security reasons.
 
+### Considerable secure eMail protocols
+- [OpenPGP](https://www.zdnet.com/article/thunderbird-to-add-built-in-support-for-openpgp-email-encryption-standard/) - Thunderbird [78](https://blog.thunderbird.net/2019/10/thunderbird-enigmail-and-openpgp/) (stable)
+- [Autocrypt](https://en.wikipedia.org/wiki/Autocrypt) (also known as _EPKS = Echo Public Key Sharing_)
+- _[JPAM](https://ietf.org/blog/jmap/) is only secure with specific (and well known) RFC's_
+- 
+
 ### Overall Project Goal
 
 * Remove/disable all Thunderbird telemetry

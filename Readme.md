@@ -76,7 +76,7 @@ I recommended the following extensions, so you might find extension specific fla
 * ~~[Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+~~
 * ~~[MinimizeToTray Reanimated](https://addons.thunderbird.net/en-US/thunderbird/addon/minimizetotray-reanimated/?src=ss)~~ [KeepInTaskbar](https://addons.thunderbird.net/en-US/thunderbird/addon/keep-in-taskbar/) + [BirdTray](https://github.com/gyunaev/birdtray/releases)
 * ~~[Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60~~
-* uBlock ([not officially Thunderbird supported](https://github.com/gorhill/uBlock/issues/3698))
+* uBlock
 
 
 ### Install uBlock Origin into Thunderbird

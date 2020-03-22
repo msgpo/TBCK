@@ -324,6 +324,7 @@ user_pref("ui.use_standins_for_native_colors", false); //problematic
 user_pref("view_source.syntax_highlight", true);
 user_pref("view_source.wrap_long_lines", true);
 user_pref("ui.use_standins_for_native_colors", true);
+user_pref("general.useragent.override", "");
 
 
 // Ciphers

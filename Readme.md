@@ -2,7 +2,7 @@
 
 TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
 
-* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.6.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.6.0/releasenotes/)) + [74 Beta 2](https://www.thunderbird.net/en-US/thunderbird/74.0beta/releasenotes/)
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.6.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.6.0/releasenotes/)) + [75 Beta 2](https://www.thunderbird.net/en-US/thunderbird/75.0beta/releasenotes/)
 * [Thunderbird via Microsoft Store](https://www.microsoft.com/en-us/p/thunderbird/9pcvbx66llqf?activetab=pivot%3Aoverviewtab) - **Partially supported**
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases) & [Interlink Mail & News](https://binaryoutcast.com/projects/interlink/) - **Not supported!** 
 
@@ -14,7 +14,6 @@ This repository contains a list of about:config settings that I have changed for
 - [OpenPGP](https://www.zdnet.com/article/thunderbird-to-add-built-in-support-for-openpgp-email-encryption-standard/) - Thunderbird [78](https://blog.thunderbird.net/2019/10/thunderbird-enigmail-and-openpgp/) (stable)
 - [Autocrypt](https://en.wikipedia.org/wiki/Autocrypt) (also known as _EPKS = Echo Public Key Sharing_)
 - _[JPAM](https://ietf.org/blog/jmap/) is only secure with specific (and well known) RFC's_
-- 
 
 ### Overall Project Goal
 

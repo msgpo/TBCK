@@ -1,5 +1,7 @@
 ## Project Overview
 
+![Thunderbird 76](https://github.com/CHEF-KOCH/TBCK/blob/master/.github/Screenshots/Thunderbird.png?raw=true "Default Thunderbird 76")
+
 TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
 
 * [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.7.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.7.0/releasenotes/)) + [76 Beta 1](https://www.thunderbird.net/en-US/thunderbird/76.0beta/releasenotes/)

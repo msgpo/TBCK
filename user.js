@@ -1,3 +1,7 @@
+// About Config
+user_pref("general.warnOnAboutConfig", false);
+
+
 // Fonts & Canvas
 //user_pref("gfx.downloadable_fonts.enabled", false); // problematic
 user_pref("gfx.canvas.remote", false);
@@ -19,14 +23,12 @@ user_pref("gfx.downloadable_fonts.validate_variation_tables", true);
 
 
 // RSS
-user_pref("rss.display.disallow_mime_handlers", 3); // default 0
-user_pref("rss.display.html_as", 1); // default 0
+user_pref("rss.display.disallow_mime_handlers", 3); // default: 0
+user_pref("rss.display.html_as", 1); // default: 0
 user_pref("rss.display.prefer_plaintext", true);
-user_pref("rss.show.content-base", 3); // default 0
-
-
-// About Config
-user_pref("general.warnOnAboutConfig", false);
+user_pref("rss.show.content-base", 3); // default: 0
+user_pref("Feeds.logging.console", "Warn"); // default: Info
+user_pref("news.warn_on_delete", false); // default: true
 
 
 // Calendar
@@ -167,6 +169,14 @@ user_pref("toolkit.telemetry.updatePing.enabled", false);
 user_pref("toolkit.telemetry.hybridContent.enabled", false);
 
 
+//OpenPGP
+user_pref("temp.openpgp.warnRefreshAll", false); //default:true
+
+
+// Isolation
+user_pref("privacy.firstparty.isolate.restrict_opener_access", true); //default:true
+
+
 //Studies
 //user_pref("app.shield.optoutstudies.enabled", false);
 
@@ -177,7 +187,7 @@ user_pref("toolkit.telemetry.hybridContent.enabled", false);
 //user_pref("network.http.spdy.enabled", false);
 
 
-// APP stuff (auto-update etc)
+// APP stuff (auto update etc.)
 user_pref("app.releaseNotesURL", "");
 user_pref("app.update.auto.migrated", true);
 user_pref("app.update.auto", false);
@@ -187,7 +197,13 @@ user_pref("app.update.service.enabled", true);
 user_pref("app.update.showInstalledUI", 1);
 user_pref("app.update.silent", false);
 user_pref("app.update.staging.enabled", false);
-user_pref("app.update.channel", "beta");
+user_pref("app.update.channel", "beta"); //default beta
+user_pref("app.update.interval", "60400"); // default: 86400
+user_pref("app.update.promptWaitTime", "60400"); // default: 86400
+
+
+// Autoscroll
+user_pref("apz.autoscroll.enabled", false); // default: true
 
 
 // Cache
@@ -214,6 +230,7 @@ user_pref("browser.search.reset.enabled", false);
 user_pref("browser.search.reset.whitelist", "");
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.update", false);
+user_pref("browser.newtabpage.enabled", false);
 
 
 // FavIcons
@@ -532,7 +549,7 @@ user_pref("browser.safebrowsing.provider.google.reportPhishMistakeURL", "");
 user_pref("browser.safebrowsing.provider.google.reportURL", "");
 user_pref("browser.safebrowsing.provider.google.updateURL", "");
 user_pref("browser.safebrowsing.provider.google4.advisoryName", "CHEF-KOCH's Anti-Google Safe-Browsing");
-user_pref("browser.safebrowsing.provider.google4.advisoryURL", ""); //https://developers.google.com/safe-browsing/v4/advisory
+user_pref("browser.safebrowsing.provider.google4.advisoryURL", ""); // https://developers.google.com/safe-browsing/v4/advisory
 user_pref("browser.safebrowsing.provider.google4.dataSharing.enabled", false);
 user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
 user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
@@ -550,6 +567,13 @@ user_pref("browser.safebrowsing.provider.mozilla.nextupdatetime", 1);
 user_pref("browser.safebrowsing.provider.mozilla.pver", 2.2);
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
+user_pref("browser.safebrowsing.allowOverride", false); // default: true
+
+
+// Sideloading
+// Sideloading is considerable not a security risk, if the OS security mechanism already fails then TB is compromised no matter what.
+user_pref("xpinstall.whitelist.required", false); // default: true
+//user_pref("xpinstall.signatures.required", true); // default: true
 
 
 // Auto fill
@@ -605,14 +629,15 @@ user_pref("webgl.disable-DOM-blit-uploads", false);
 user_pref("webgl.disable-extensions", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", false);
 user_pref("webgl.disable-wgl", false);
-user_pref("webgl.disabled", true);
+user_pref("webgl.disabled", true); // default: false
 user_pref("webgl.dxgl.enabled", false);
 user_pref("webgl.dxgl.needs-finish", false);
 user_pref("webgl.enable-debug-renderer-info", true);
 user_pref("webgl.enable-draft-extensions", false);
+user_pref("webextensions.tests", false); // default: false
 user_pref("webgl.enable-privileged-extensions", false);
 user_pref("webgl.enable-surface-texture", false);
-user_pref("webgl.enable-webgl2", false); //default true
+user_pref("webgl.enable-webgl2", false); // default true
 user_pref("webgl.force-enabled", false);
 user_pref("webgl.force-index-validation", 0);
 user_pref("webgl.force-layers-readback", false);
@@ -656,7 +681,7 @@ user_pref("captivedetect.canonicalURL", ""); //http://detectportal.firefox.com/s
 
 
 //DNS
-user_pref("network.dns.blockDotOnion", false);
+user_pref("network.dns.blockDotOnion", false); // default: true
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 
@@ -672,7 +697,7 @@ user_pref("network.proxy.socks_remote_dns", true);
 user_pref("network.proxy.type", 0);
 
 
-// Disable FTP protocol
+// Disable insecure protocols (FTP etc.)
 user_pref("network.ftp.enabled", false);
 
 
@@ -702,6 +727,10 @@ user_pref("browser.send_pings.require_same_host", true);
 user_pref("network.protocol-handler.external.ms-windows-store", false);
 
 
+// Disallow images saved as webp
+user_pref("image.webp.enabled", false);
+
+
 // Referer
 user_pref("network.http.referer.defaultPolicy", 3); //default
 user_pref("network.http.referer.hideOnionSource", true);
@@ -712,4 +741,15 @@ user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 
 
 // Themes
-user_pref("lightweightThemes.update.enabled", true); //workaround
+user_pref("lightweightThemes.update.enabled", true); // workaround
+user_pref("widget.content.allow-gtk-dark-theme", true); // default: false
+user_pref("widget.content.gtk-high-contrast.enabled", true); // default: true
+
+
+// Web Tools
+user_pref("devtools.whatsnew.feature-enabled", false);
+user_pref("devtools.whatsnew.enabled", false);
+
+
+// Smooth scroll
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", 1.5);

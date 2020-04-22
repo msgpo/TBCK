@@ -26,7 +26,7 @@ user_pref("gfx.downloadable_fonts.validate_variation_tables", true);
 user_pref("rss.display.disallow_mime_handlers", 3); // default: 0
 user_pref("rss.display.html_as", 1); // default: 0
 user_pref("rss.display.prefer_plaintext", true);
-user_pref("rss.show.content-base", 3); // default: 0
+user_pref("rss.show.content-base", 1); // default: 0, since 74+ 3
 user_pref("Feeds.logging.console", "Warn"); // default: Info
 user_pref("news.warn_on_delete", false); // default: true
 
@@ -78,6 +78,7 @@ user_pref("mail.imap.mime_parts_on_demand", true);
 user_pref("mail.imap.ssl.show_insecure_images", false);
 user_pref("mail.inline_attachments", false);
 user_pref("mail.inline_attachments.text", true); //false
+user_pref("mail.compose.big_attachments.notify", false);
 user_pref("mail.shell.checkDefaultClient", false);
 user_pref("mail.shell.checkDefaultMail", false);
 user_pref("mail.showCondensedAddresses", false);
@@ -88,6 +89,7 @@ user_pref("mail.spam.version", 1);
 user_pref("mail.SpellCheckBeforeSend", true); //https://bugzilla.mozilla.org/show_bug.cgi?id=667133
 user_pref("mail.store_conversion_enabled", true);
 user_pref("mail.tabs.autoHide", true);
+user_pref("mail.provider.enabled", false);
 
 
 // Mail News
@@ -99,16 +101,17 @@ user_pref("mailnews.auto_config.fetchFromISP.enabled", false);
 user_pref("mailnews.auto_config.fetchFromISP.sendEmailAddress", false);
 user_pref("mailnews.auto_config.guess.enabled", false);
 user_pref("mailnews.display.date_senders_timezone", false); //Server timezone info, if set to true
-user_pref("mailnews.display.html_as", 3); //0
+user_pref("mailnews.display.html_as", 1); //0 //1 is the safest option but might break stuff alternative use 3 and control it via extension
 user_pref("mailnews.headers.showSender", true);
 user_pref("mailnews.headers.showUserAgent", false);
+user_pref("mailnews.display.disallow_mime_handlers", 3);
 user_pref("mailnews.reply_in_default_charset", true);
 user_pref("mailnews.sendformat.auto_downgrade", false);
 user_pref("mailnews.start_page.enabled", false);
 user_pref("mailnews.start_page.override_url", ""); //https://live.thunderbird.net/%APP%/whatsnew?locale=%LOCALE%&version=%VERSION%&channel=%CHANNEL%&os=%OS%&buildid=%APPBUILDID%
 user_pref("mailnews.start_page.url", "");
 user_pref("mailnews.use_received_date", true); //hidden
-//user_pref("mailnews.display.prefer_plaintext", false); //HTML (default) <-> plain text
+user_pref("mailnews.display.prefer_plaintext", true); //HTML (default) <-> plain text
 user_pref("mailnews.view_default_charset", "UTF-8"); //ISO-8859-1
 
 
@@ -123,7 +126,7 @@ user_pref("mathml.disabled", true);
 user_pref("network.trr.mode", 2);
 user_pref("network.trr.max-fails", 3);
 user_pref("network.trr.uri", "https://mozilla.cloudflare-dns.com/dns-query");
-user_pref("network.trr.resolvers", "[{ "name": "Cloudflare", "url": "https://mozilla.cloudflare-dns.com/dns-query" }]");
+user_pref("network.trr.resolvers", '[{ "name": "Cloudflare", "url": "https://mozilla.cloudflare-dns.com/dns-query" },{ "name": "NextDNS", "url": "https://trr.dns.nextdns.io/" },{ "name": "SecureDNS", "url": "https://doh.securedns.eu/dns-query" },{ "name": "AppliedPrivacy", "url": "https://doh.appliedprivacy.net/query" },{ "name": "Digitale Gesellschaft (CH)", "url": "https://dns.digitale-gesellschaft.ch/dns-query" }, { "name": "Freifunk Muenchen", "url": "https://doh.ffmuc.net" }, { "name": "Quad9", "url": "https://dns.quad9.net/dns-query" }]');
 user_pref("network.trr.useGET", true);
 user_pref("network.trr.wait-for-A-and-AAAA", true);
 user_pref("network.trr.allow-rfc1918", true);
@@ -220,6 +223,7 @@ user_pref("browser.cache.frecency_half_life_hours", 5);
 user_pref("browser.cache.offline.capacity", 0);
 user_pref("browser.cache.offline.enable", false);
 user_pref("browser.cache.offline.insecure.enable", false);
+user_pref("browser.cache.memory.enable", false);
 
 
 // Search
@@ -236,6 +240,7 @@ user_pref("browser.newtabpage.enabled", false);
 // FavIcons
 user_pref("alerts.showFavicons", false);
 user_pref("browser.chrome.site_icons", false);
+user_pref("browser.chrome.favicons", false);
 
 
 // Download Folder
@@ -331,6 +336,7 @@ user_pref("security.mixed_content.block_active_content", true);
 user_pref("security.mixed_content.block_display_content", true);
 user_pref("security.mixed_content.block_object_subrequest", true);
 user_pref("security.mixed_content.send_hsts_priming", false);
+user_pref("security.mixed_content.upgrade_display_content", true);
 user_pref("security.mixed_content.use_hsts", true);
 user_pref("security.password_lifetime", 10);
 user_pref("security.pki.sha1_enforcement_level", 1); // default 3
@@ -348,13 +354,18 @@ user_pref("general.useragent.override", "");
 user_pref("security.ssl3.dhe_rsa_aes_128_sha", false);
 user_pref("security.ssl3.dhe_rsa_aes_256_sha", false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha", false);
+user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha", false);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha", false);
+user_pref("security.ssl3.ecdhe_rsa_aes_256_sha", false);
+user_pref("security.ssl3.rsa_aes_128_sha", false);
+user_pref("security.ssl3.rsa_aes_256_sha", false);
 user_pref("security.ssl3.rsa_des_ede3_sha", false);
 
 
 // URL (feedback, learn more etc)
 user_pref("mail.ignore_thread.learn_more_url", "");
 user_pref("mail.instrumentation.postUrl", "");
+user_pref("mail.default_html_action", 1);
 
 
 // Geo
@@ -396,6 +407,10 @@ user_pref("media.webspeech.recognition.enable", false);
 user_pref("media.webspeech.synth.enabled", false);
 
 
+// Network Conectivity
+user_pref("network.connectivity-service.enabled", false);
+
+
 // Privacy
 user_pref("privacy.clearOnShutdown.cache", true);
 user_pref("privacy.clearOnShutdown.cookies", true);
@@ -418,7 +433,7 @@ user_pref("privacy.resistFingerprinting", false); //default, causes too many pro
 
 
 // Surf Container
-user_pref("privacy.firstparty.isolate", true);
+user_pref("privacy.firstparty.isolate", true); // might break time zone/time stampt etc
 
 
 // Tracking Protection
@@ -568,6 +583,7 @@ user_pref("browser.safebrowsing.provider.mozilla.pver", 2.2);
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
 user_pref("browser.safebrowsing.allowOverride", false); // default: true
+user_pref("browser.safebrowsing.appRepURL", " ");
 
 
 // Sideloading
@@ -635,6 +651,7 @@ user_pref("webgl.dxgl.needs-finish", false);
 user_pref("webgl.enable-debug-renderer-info", true);
 user_pref("webgl.enable-draft-extensions", false);
 user_pref("webextensions.tests", false); // default: false
+user_pref("extensions.ui.lastCategory", "addons://list/extension");
 user_pref("webgl.enable-privileged-extensions", false);
 user_pref("webgl.enable-surface-texture", false);
 user_pref("webgl.enable-webgl2", false); // default true
@@ -655,6 +672,7 @@ user_pref("webgl.prefer-16bpp", false);
 user_pref("webgl.renderer-string-override", "");
 user_pref("webgl.vendor-string-override", "");
 
+
 // Auto Crypt
 user_pref("mail.server.default.acPreferEncrypt", 0);
 user_pref("mail.server.default.enableAutocrypt", false);
@@ -668,6 +686,7 @@ user_pref("extensions.enigmail.mimeHashAlgorithm", 5);
 user_pref("extensions.enigmail.protectedHeaders", 2);
 user_pref("extensions.enigmail.protectedSubjectText", "Encrypted Message");
 user_pref("extensions.enigmail.useDefaultComment", true);
+user_pref("extensions.enigmail.autoWkdLookup", 0);
 
 
 // Devtools
@@ -710,8 +729,9 @@ user_pref("network.IDN_show_punycode", true);
 
 
 // Networking (Cookies, IPv4/IPv6 etc)
+user_pref("browser.send_pings.require_same_host", true);
 user_pref("network.auth.subresource-img-cross-origin-http-auth-allow", false);
-user_pref("network.cookie.cookieBehavior", 2);
+user_pref("network.cookie.cookieBehavior", 1); // 2
 user_pref("network.cookie.leave-secure-alone", true);
 user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.prefsMigrated", true);
@@ -722,8 +742,8 @@ user_pref("network.http.altsvc.oe", false);
 user_pref("network.http.redirection-limit", 8);
 user_pref("network.http.sendRefererHeader", 0); // default 2
 user_pref("network.http.sendSecureXSiteReferrer", false);
+user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.notify.IPv6", false);
-user_pref("browser.send_pings.require_same_host", true);
 user_pref("network.protocol-handler.external.ms-windows-store", false);
 
 

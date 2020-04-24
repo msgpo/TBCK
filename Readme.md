@@ -2,14 +2,14 @@
 
 ![Thunderbird 76](https://github.com/CHEF-KOCH/TBCK/blob/master/.github/Screenshots/Thunderbird.png?raw=true "Default Thunderbird 76")
 
-TBCK doesn't document every toggle because everyone can Google what each setting really changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
+TBCK doesn't document every single toggle because everyone can Google what each config toggle changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
 
 * [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.7.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.7.0/releasenotes/)) + [76 Beta 2](https://www.thunderbird.net/en-US/thunderbird/76.0beta/releasenotes/)
 * [Thunderbird via Microsoft Store](https://www.microsoft.com/en-us/p/thunderbird/9pcvbx66llqf?activetab=pivot%3Aoverviewtab) - **Partially supported**
 * [Mozilla Lightning](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions): _68.5.0_ ([Changelog](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions))
-* [Eudora](https://wiki.mozilla.org/Eudora_Releases) & [Interlink Mail & News](https://binaryoutcast.com/projects/interlink/) - **Not supported!** 
+* [Eudora](https://wiki.mozilla.org/Eudora_Releases) & [Interlink Mail & News](https://binaryoutcast.com/projects/interlink/) - **Not supported!**
 
-Please remember to backup your original `prefs.js` file before you add the modified user.js file into your profile folder! 
+Please remember to backup your original `prefs.js` file before you add the modified user.js file into your profile folder!
 
 This repository contains a list of about:config settings that I have changed for both preferential reasons, and also privacy and security reasons.
 
@@ -21,7 +21,7 @@ This repository contains a list of about:config settings that I have changed for
 ### Overall Project Goal
 
 * Remove/disable all Thunderbird telemetry
-* Remove/disable all "startup connections"
+* Remove/disable or reduce all "startup connections"
 * Reduce all traffic caused by "_unneeded startup connections_".
 * Prevent leaks & exposures caused by fingerprinting attacks
 * Disable all sync/monitoring/pocket & other "useless" features
@@ -38,7 +38,7 @@ Windows friendly carriage returns which you need to change yourself if you like 
 
 ### Thunderbird 64-Bit (upgrade procedure)
 
-In case you like to upgrade your x86 (32-Bit) Thunderbird to a 64-Bit (x64) version, you actually have to uninstall the x86 version first otherwise you have two installations and two profiles. 
+In case you like to upgrade your x86 (32-Bit) Thunderbird to a 64-Bit (x64) version, you actually have to uninstall the x86 version first otherwise you have two installations and two profiles.
 
 Your default profile is stored under `%AppData%\Roaming\Thunderbird\Profiles`, backup the content first, the default folder for your current profile is in a folder called `xxxxxdefault`. Just copy or "zip" the folder, so that you get a fully functional backup. Uninstall the old x86 version and install the new x64 version, copy your backup into your profile folder and start Thunderbird.
 
@@ -56,7 +56,7 @@ operating systems.
 
 ### Extensions
 
-`extensions.strictCompatibility` is set to `false`, since Thunderbird 60.0 Beta 8 all add-ons which aren't labeled as _Thunderbird 60 compatible_ otherwise won't load anymore.
+`extensions.strictCompatibility` is set to `false`, since Thunderbird 60.0 Beta 8 all add-ons which aren't labelled as _Thunderbird 60 compatible_ otherwise won't load anymore.
 
 I recommended the following extensions, so you might find extension specific flags in the _user.js_ file, even if you're not using them, it's not needed to remove them manually from the configuration since they getting ignored by Thunderbird.
 
@@ -64,7 +64,7 @@ I recommended the following extensions, so you might find extension specific fla
 * [Allow HTML Temp](https://addons.thunderbird.net/EN-US/thunderbird/addon/allow-html-temp/)
 * [Copy Folder](https://addons.mozilla.org/en-US/thunderbird/addon/copy-folder/?src=cb-dl-popular)
 * [DKIM Verifier](https://addons.thunderbird.net/EN-US/thunderbird/addon/dkim-verifier/)
-* [Encrypt if possible](https://addons.mozilla.org/EN-US/thunderbird/addon/encrypt-if-possible/?src=cb-dl-users) 
+* [Encrypt if possible](https://addons.mozilla.org/EN-US/thunderbird/addon/encrypt-if-possible/?src=cb-dl-users)
 * [KeeBird](https://addons.mozilla.org/en-US/thunderbird/addon/keebird/?src=cb-dl-recentlyadded)
 * [Logout](https://addons.mozilla.org/en-US/thunderbird/addon/logout/?src=cb-dl-popular)
 * [MEGAbird](https://addons.mozilla.org/EN-US/thunderbird/addon/megabird/?src=cb-dl-users)
@@ -73,12 +73,13 @@ I recommended the following extensions, so you might find extension specific fla
 * [ReloadPAC](https://addons.mozilla.org/en-US/thunderbird/addon/reloadpac/?src=cb-dl-created)
 * [Secure Addressing](https://addons.mozilla.org/en-US/thunderbird/addon/secure-addressing/?src=cb-dl-created)
 * [Sensitivity Header](https://addons.mozilla.org/en-US/thunderbird/addon/sensitivity-header/?src=cb-dl-popular)
-* [TorBirdy](https://addons.mozilla.org/en-US/thunderbird/addon/torbirdy/?src=cb-dl-created) 
+* [TorBirdy](https://addons.mozilla.org/en-US/thunderbird/addon/torbirdy/?src=cb-dl-created)
 * ~~[Engimail](https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/?src=cb-dl-mostpopular)~~ (_Addon will be integrated into TB v78, it will be installable until v68_)
 * ~~[Great DANE](https://addons.mozilla.org/en-US/thunderbird/addon/great-dane-smime/?src=cb-dl-recentlyadded) - incompatible with TB 60+~~
 * ~~[MinimizeToTray Reanimated](https://addons.thunderbird.net/en-US/thunderbird/addon/minimizetotray-reanimated/?src=ss)~~ [KeepInTaskbar](https://addons.thunderbird.net/en-US/thunderbird/addon/keep-in-taskbar/) + [BirdTray](https://github.com/gyunaev/birdtray/releases)
 * ~~[Stego Block](https://addons.mozilla.org/en-US/thunderbird/addon/stego-block/?src=cb-dl-popular) - incompatible with TB 60~~
 * uBlock
+* ~~[ScrapBook X AutoSave](https://addons.thunderbird.net/en-us/firefox/addon/scrapbookx-autosave/?src=dp-dl-othersby)~~
 
 
 ### Install uBlock Origin into Thunderbird
@@ -119,13 +120,13 @@ Path=V:\Mozilla\Firefox\Profiles\test2
 
 ## Warning for AntiVirus User
 
-**DO NOT** enable the function to allow your AV to scan your inbox, disable this in your AV program **AND** in Thunderbird. 
+**DO NOT** enable the function to allow your AV to scan your inbox, disable this in your AV program **AND** in Thunderbird.
 
 The problem with this function is a possible security risk. This function not only allows the AV engine to scan the files it also _opens_ the emails to inspect it's content and attachment which might trigger certain things, like placing a cookie or to let the original transmitter know if you read it or in the worst case scenario (if it's really spam) to trigger an automatically subscription.
 
 ## Attacks against S/MIME and PGP
 
-In the recently published ["Johnny-You-Are-Fired"](https://github.com/RUB-NDS/Johnny-You-Are-Fired) [(paper)](https://github.com/RUB-NDS/Johnny-You-Are-Fired/blob/master/paper/johnny-fired.pdf) publication we learned that the signature check can be bypassed. 
+In the recently published ["Johnny-You-Are-Fired"](https://github.com/RUB-NDS/Johnny-You-Are-Fired) [(paper)](https://github.com/RUB-NDS/Johnny-You-Are-Fired/blob/master/paper/johnny-fired.pdf) publication we learned that the signature check can be bypassed.
 
 What can (currently) be abused?
 * Exploiting the CMS (Cryptographic Message Syntax) flaws
@@ -135,12 +136,12 @@ What can (currently) be abused?
 * Mimicking valid signatures on the UI by using HTML and CSS
 
 
-So how do we migrate this in order to protect ourselves? 
+So how do we migrate this in order to protect ourselves?
 
 We disable/block HTML-Code in eMails and we disallow to download third-party content (both is already done via our hardened user.js). The rest must be fixed within the plugins because the mentioned attacks are not targeting the OpenPGP or S/MIME standard or underpinning cryptographic primitives they are basically abusing various flawed implementations.
 
 ## Reference
-* [Thunderbird’s New Home](https://blog.thunderbird.net/2020/01/thunderbirds-new-home/)
+* [Thunderbird's New Home](https://blog.thunderbird.net/2020/01/thunderbirds-new-home/)
 * [Thunderbird Donations](https://give.thunderbird.net/en-US/)
 * [Security Advisories for Thunderbird](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/)
 

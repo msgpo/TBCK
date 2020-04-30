@@ -139,6 +139,12 @@ So how do we migrate this in order to protect ourselves?
 
 We disable/block HTML-Code in eMails and we disallow to download third-party content (both is already done via our hardened user.js). The rest must be fixed within the plugins because the mentioned attacks are not targeting the OpenPGP or S/MIME standard or underpinning cryptographic primitives they are basically abusing various flawed implementations.
 
+
+## Mozilla's own eMail Service
+
+[Firefox Private Relay](https://relay.firefox.com/) is basically spoken an [open source](https://github.com/mozilla/fx-private-relay) temp mail provider/addon for Firefox and (_maybe_) soon integrated into Thunderbord or also available as addon.
+
+
 ## Reference
 * [Thunderbird’s New Home](https://blog.thunderbird.net/2020/01/thunderbirds-new-home/)
 * [Thunderbird Donations](https://give.thunderbird.net/en-US/)

@@ -4,7 +4,7 @@
 
 TBCK doesn't document every single toggle because everyone can Google what each config toggle changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
 
-* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.7.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.7.0/releasenotes/)) + [76 Beta 2](https://www.thunderbird.net/en-US/thunderbird/76.0beta/releasenotes/)
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.8.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.8.0/releasenotes/)) + [76 Beta 3](https://www.thunderbird.net/en-US/thunderbird/76.0beta/releasenotes/)
 * [Thunderbird via Microsoft Store](https://www.microsoft.com/en-us/p/thunderbird/9pcvbx66llqf?activetab=pivot%3Aoverviewtab) - **Partially supported**
 * [Mozilla Lightning](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions): _68.5.0_ ([Changelog](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions))
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases) & [Interlink Mail & News](https://binaryoutcast.com/projects/interlink/) - **Not supported!**
@@ -139,6 +139,12 @@ What can (currently) be abused?
 So how do we migrate this in order to protect ourselves?
 
 We disable/block HTML-Code in eMails and we disallow to download third-party content (both is already done via our hardened user.js). The rest must be fixed within the plugins because the mentioned attacks are not targeting the OpenPGP or S/MIME standard or underpinning cryptographic primitives they are basically abusing various flawed implementations.
+
+
+## Mozilla's own eMail Service
+
+[Firefox Private Relay](https://relay.firefox.com/) is basically spoken an [open source](https://github.com/mozilla/fx-private-relay) temp mail provider/addon for Firefox and (_maybe_) soon integrated into Thunderbord or also available as addon.
+
 
 ## Reference
 * [Thunderbird's New Home](https://blog.thunderbird.net/2020/01/thunderbirds-new-home/)

@@ -1,10 +1,10 @@
 ## Project Overview
 
-![Thunderbird 76](https://github.com/CHEF-KOCH/TBCK/blob/master/.github/Screenshots/Thunderbird.png?raw=true "Default Thunderbird 76")
+![Thunderbird 76](https://github.com/CHEF-KOCH/TBCK/blob/master/.github/Screenshots/Thunderbird.png?raw=true "Default Thunderbird 76 Layout")
 
 TBCK doesn't document every single toggle because everyone can Google what each config toggle changes and most of them are self-explaining anyway or they getting changed/removed by Mozilla after some time.
 
-* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.8.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.8.0/releasenotes/)) + [76 Beta 3](https://www.thunderbird.net/en-US/thunderbird/76.0beta/releasenotes/)
+* [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.8.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.8.0/releasenotes/)) + [77 Beta 1](https://www.thunderbird.net/en-US/thunderbird/77.0beta/releasenotes/)
 * [Thunderbird via Microsoft Store](https://www.microsoft.com/en-us/p/thunderbird/9pcvbx66llqf?activetab=pivot%3Aoverviewtab) - **Partially supported**
 * [Mozilla Lightning](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions): _68.5.0_ ([Changelog](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions))
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases) & [Interlink Mail & News](https://binaryoutcast.com/projects/interlink/) - **Not supported!**

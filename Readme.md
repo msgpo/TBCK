@@ -6,7 +6,7 @@ TBCK doesn't document every single toggle because everyone can Google what each 
 
 * [Mozilla Thunderbird](https://www.thunderbird.net/en-US/): _68.9.0_ ([Changelog](https://www.thunderbird.net/en-US/thunderbird/68.9.0/releasenotes/)) + [77 Beta 3](https://www.thunderbird.net/en-US/thunderbird/77.0beta/releasenotes/)
 * [Thunderbird via Microsoft Store](https://www.microsoft.com/en-us/p/thunderbird/9pcvbx66llqf?activetab=pivot%3Aoverviewtab) - **Partially supported**
-* [Mozilla Lightning](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions): _68.5.0_ ([Changelog](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions))
+* [Mozilla Lightning](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions): _68.9.0_ ([Changelog](https://developer.mozilla.org/en-US/docs/Mozilla/Calendar/Calendar_Versions))
 * [Eudora](https://wiki.mozilla.org/Eudora_Releases) & [Interlink Mail & News](https://binaryoutcast.com/projects/interlink/) - **Not supported!**
 
 Please remember to backup your original `prefs.js` file before you add the modified user.js file into your profile folder!

@@ -113,6 +113,10 @@ user_pref("mailnews.start_page.url", "");
 user_pref("mailnews.use_received_date", true); //hidden
 user_pref("mailnews.display.prefer_plaintext", true); //HTML (default) <-> plain text
 user_pref("mailnews.view_default_charset", "UTF-8"); //ISO-8859-1
+user_pref("mailnews.send_default_charset", "UTF-8");
+user_pref("mailnews.reply_header_type", 1);
+user_pref("mailnews.reply_header_authorwrote", "%s");
+user_pref("mailnews.reply_header_authorwrotesingle", "#1:");
 
 
 // SPAM (filter) & general spam handling
